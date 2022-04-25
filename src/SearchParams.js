@@ -24,8 +24,10 @@ const SearchParams=()=>{
           setIsloading(false);
            setError(err.message)
            }) ;
-    } , []); // eslint-disable-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    } , []); 
   
+    
     async function requestPets() {
       const res = await fetch(
         `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
