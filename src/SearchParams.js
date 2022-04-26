@@ -30,7 +30,7 @@ const SearchParams=()=>{
     
     async function requestPets() {
       const res = await fetch(
-        `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+        `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
         )
         if(!res.ok){
           const message= ('could not fetch the data from the resources')
